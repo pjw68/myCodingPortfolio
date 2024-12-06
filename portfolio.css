@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Matemasie", sans-serif; 
+    background-color: rgb(228, 209, 186);
+    background-image: url(../resources/images/body\ img\ neg.jpg);
+    background-size: cover; 
+    background-repeat: repeat;  
+}
+
+nav {
+    position: sticky; /*keeps navbar at top of website whilst scrolling*/
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 20px;
+    background-image: url(../resources/images/body\ img\ neg.jpg);
+    background-size: cover; 
+    background-repeat: repeat;   
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links a {
+    display: block;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease-in-out 100ms;
+}
+
+.nav-links a:hover {
+    background-color: rgb(234, 235, 221);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 34px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hamburger .bar {
+    flex-basis: 100%;
+    height: 4px;
+    background-color: rgb(100, 73, 3);
+    margin: 3px;
+}
+
+main {
+    width: 100%;
+}
+
+main .main-box {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+}
+
+main .main-box h3 {
+    font-size: 50px;
+    text-align: center;
+    padding: 30px; 
+    color: rgb(206, 154, 24);
+    text-shadow: 5px 5px 2px rgb(37, 16, 1);
+}
+
+main .main-box {
+    background-image: url(../resources/images/WIN_20240806_15_30_02_Proa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/*Projects Section*/
+.project1 {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project1 p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    flex-basis: 100%;
+}
+
+.project1-box {
+    width: 300px;
+    height: 300px;
+}
+
+.project1-box:nth-child(2) {
+    background-image: url(../resources/images/projects/Tea\ Cozy.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project1-box:nth-child(3) {
+    font-size: 18px;
+    height: 100px;
+}
+
+.project2 {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+.project2 p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    flex-basis: 100%;
+}
+
+.project2-box {
+    width: 300px;
+    height: 300px;
+}
+
+.project2-box:nth-child(2) {
+    background-image: url(../resources/images/projects/Wax\ Factor\ Music\ Store.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project2-box:nth-child(3) {
+    font-size: 18px;
+    height: 100px;
+}
+
+.project3 {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+.project3 p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    flex-basis: 100%;
+}
+
+.project3-box {
+    width: 300px;
+    height: 300px;
+}
+
+.project3-box:nth-child(2) {
+    background-image: url(../resources/images/projects/Freight\ Train\ Photo\ Club.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project3-box:nth-child(3) {
+    font-size: 18px;
+    height: 100px;
+}
+
+
+/*Skills Section*/
+.icons {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icons .icons-box {
+    width: 100px;
+    height: 100px;
+}
+
+.icons .icons-box:nth-child(1) {
+    background-image: url(../resources/images/icons/icons8-html5-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.icons .icons-box:nth-child(2) {
+    background-image: url(../resources/images/icons/icons8-css-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.icons .icons-box:nth-child(3) {
+    background-image: url(../resources/images/icons/icons8-javascript-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.icons .icons-box:nth-child(4) {
+    background-image: url(../resources/images/icons/icons8-github-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+/* Footer */
+#footer {
+    font-size: 18px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar responsive design */
+@media (max-width: 768px) {
+    
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display: none;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        flex-basis: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .nav-links a:hover {
+        background-color: rgb(119, 122, 75);
+    }
+}
+
+/* main responsive design*/
+@media (max-width: 767px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    main .main-box h3 {
+        font-size: 30px;
+    }
+}
